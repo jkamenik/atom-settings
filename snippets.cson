@@ -1,0 +1,91 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+'.source.gpd':
+  'boilerplate':
+    'prefix':'///'
+    'body':'//Todo//\n//End//\n\n//Backlog//\n    ${1}\n//End//\n\n//Closed//\n//End//'
+
+  'cost':
+    'prefix': '$'
+    'body': '\$(${1:cost}) $0'
+
+  'completion_time':
+    'prefix': '~'
+    'body': '~(${1:date}) $0'
+
+  'context':
+    'prefix': '@'
+    'body': '@(${1:context}) $0'
+
+  'note':
+    'prefix': '`'
+    'body': '`(${0:note})'
+
+  'project':
+    'prefix':'#'
+    'body': '#(${1:project}) $0'
+
+  'section_header':
+    'prefix': '//'
+    'body':'//${1:Section}//\n$0\n//End//'
+
+  'target':
+    'prefix': '!'
+    'body': '!(${1:target}) $0'
+
+  'new note':
+    'prefix': 'new'
+    'body': '#(${2:CRPI-}) $0 @(${1:work})'
+
+  'waiting':
+    'prefix': 'wait'
+    'body': " @(waiting) !(${0:whom})"
+
+# '.source.GPD_Note':
+#   'cost':
+#     'prefix': '$'
+#     'body': '\$(${1:cost}) $0'
+#
+#   'completion_time':
+#     'prefix': '~'
+#     'body': '~(${1:date}) $0'
+#
+#   'context':
+#     'prefix': '@'
+#     'body': '@(${1:context}) $0'
+#
+#   'note':
+#     'prefix': '`'
+#     'body': '`(${0:note})'
+#
+#   'project':
+#     'prefix':'#'
+#     'body': '#(${1:project}) $0'
+#
+#   'section_header':
+#     'prefix': '//'
+#     'body':'//${1:Section}//\n$0\n//End//'
+#
+#   'target':
+#     'prefix': '!'
+#     'body': '!(${1:target}) $0'

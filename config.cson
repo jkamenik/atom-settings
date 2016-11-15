@@ -1,0 +1,62 @@
+"*":
+  Termrk: {}
+  atomdo: {}
+  awiki:
+    wikiLocation: "/Users/jkamenik/.atom/packages/awiki/wiki/"
+  core:
+    packagesWithKeymapsDisabled: [
+      "glist"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "385e0edb-539c-991e-15e4-ea182c558aed"
+  glist:
+    githubToken: "**********"
+  gpd:
+    dateFormat: "YYYY-MM-DD hh:mm"
+    defaultGpdFile: "/Users/jkamenik/Dropbox/gtd/main.GPD"
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.html.basic"
+      "text.md"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.gfm.nvatom"
+    ]
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+  nvatom:
+    directory: "/Users/jkamenik/Dropbox/notes"
+  organized: {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.gfm.nvatom"
+      "source.gpd"
+      "source.gpd_note"
+    ]
+  term3: {}
+  "theme-switcher":
+    syntaxThemeOne: "atom-dark-syntax"
+    uiThemeOne: "atom-dark-ui"
+    uiThemeTwo: "atom-light-ui"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
