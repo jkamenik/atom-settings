@@ -18,6 +18,8 @@
     showInvisibles: true
   "exception-reporting":
     userId: "385e0edb-539c-991e-15e4-ea182c558aed"
+  "fuzzy-finder":
+    searchAllPanes: true
   glist:
     githubToken: "**********"
   gpd:
@@ -56,7 +58,12 @@
     syntaxThemeOne: "atom-dark-syntax"
     uiThemeOne: "atom-dark-ui"
     uiThemeTwo: "atom-light-ui"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
+".gfm.nvatom.source":
+  editor:
+    showInvisibles: false
+".gfm.source":
+  editor:
+    softWrapAtPreferredLineLength: true
