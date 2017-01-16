@@ -36,6 +36,7 @@
   'alt-x': 'command-palette:toggle'
   'alt-shift-up': 'editor:move-line-up'
   'alt-shift-down': 'editor:move-line-down'
+  'cmd-l': 'go-to-line:toggle'
 
 'atom-workspace':
   'cmd-shift-t': 'fuzzy-grep:toggle'
