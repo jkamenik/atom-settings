@@ -4,8 +4,13 @@
   awiki:
     wikiLocation: "/Users/jkamenik/.atom/packages/awiki/wiki/"
   core:
+    disabledPackages: [
+      "whitespace"
+    ]
     packagesWithKeymapsDisabled: [
       "glist"
+      "git-diff"
+      "git-plus"
     ]
     telemetryConsent: "limited"
     themes: [
@@ -20,6 +25,10 @@
     userId: "385e0edb-539c-991e-15e4-ea182c558aed"
   "fuzzy-finder":
     searchAllPanes: true
+  "git-diff": {}
+  "git-plus":
+    general:
+      _analyticsUserId: "b6030370-75d1-4086-b623-465f9e774632"
   glist:
     githubToken: "**********"
   gpd:
@@ -39,6 +48,8 @@
     plugins:
       cursorline: true
       cursorlineDecorationsZIndex: 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   nvatom:
     directory: "/Users/jkamenik/Dropbox/notes"
   organized: {}
@@ -61,9 +72,28 @@
   "tree-view": {}
   welcome:
     showOnStartup: false
+".diff.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: false
+    softWrapAtPreferredLineLength: false
 ".gfm.nvatom.source":
   editor:
     showInvisibles: false
 ".gfm.source":
   editor:
     softWrapAtPreferredLineLength: true
+".git-commit.text":
+  editor:
+    showInvisibles: false
+".git-config.source":
+  editor:
+    showInvisibles: true
+".git-rebase.text":
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: false
