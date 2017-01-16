@@ -31,8 +31,16 @@ atom-text-editor::shadow .cursor {
   // border-color: red;
 }
 
+// Note: this causes a deprecation warning, but until GFM/Atom is updated this
+// is the only way to effect the color of Header elements.
+//atom-text-editor::shadow span.gfm .raw => atom-text-editor.editor span.syntax--gfm .syntax--raw
 atom-text-editor::shadow {
-  span.gfm {
+  // Make the Markdown colors a little bit more pleasant.
+  span.syntax--gfm {
+    .syntax--raw {
+      color: #FFFFB6;
+    }
+    
     .heading {
       font-weight: bold;
 
@@ -49,24 +57,11 @@ atom-text-editor::shadow {
     .heading-6 {color: rgb(153,197,160);}
   }
 
-  .johnk-notes.todo  {color: darkred;}
-  .johnk-notes.start {color: yellow;}
-  .johnk-notes.done  {color: lightgreen;}
-
-  span.johnk-notes {
-    .tag {
-      text-transform: uppercase;
-      font-style: italic;
-    }
-
-    .todo {
-      color: red;
-    }
-    .start {
-      color: yellow;
-    }
-    .done {
-      color: green;
+  // Hide the unimportant mark that is added by diff to make colors easier to see.
+  span.source.diff {
+    .unimportant {
+      color: transparent;
+      font-size: 0;
     }
   }
 }
