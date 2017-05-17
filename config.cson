@@ -1,11 +1,24 @@
 "*":
   Termrk: {}
+  "atom-package-deps":
+    ignored: []
   atomdo: {}
   awiki:
     wikiLocation: "/Users/jkamenik/.atom/packages/awiki/wiki/"
   core:
+    customFileTypes:
+      "source.dockerfile": [
+        "Dockerfile.prod"
+      ]
     disabledPackages: [
       "whitespace"
+      "atom-ungit"
+      "git-plus"
+      "gpd"
+      "markdown-writer"
+      "term3"
+      "emacs-flow"
+      "advanced-open-file"
     ]
     packagesWithKeymapsDisabled: [
       "glist"
@@ -17,8 +30,9 @@
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
+    fontSize: 17
     showIndentGuide: true
     showInvisibles: true
   "exception-reporting":
@@ -27,8 +41,13 @@
     searchAllPanes: true
   "git-diff": {}
   "git-plus":
+    diffs:
+      includeStagedDiff: false
+    experimental: {}
     general:
       _analyticsUserId: "b6030370-75d1-4086-b623-465f9e774632"
+    remoteInteractions:
+      pullBeforePush: true
   glist:
     githubToken: "**********"
   gpd:
@@ -45,11 +64,16 @@
       "source.gfm.nvatom"
     ]
   minimap:
+    disablePythonDocLinks: true
     plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
       cursorline: true
       cursorlineDecorationsZIndex: 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
   nvatom:
     directory: "/Users/jkamenik/Dropbox/notes"
   organized: {}
@@ -69,7 +93,8 @@
     syntaxThemeOne: "atom-dark-syntax"
     uiThemeOne: "atom-dark-ui"
     uiThemeTwo: "atom-light-ui"
-  "tree-view": {}
+  "tree-view":
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
 ".diff.source":
