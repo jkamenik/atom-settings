@@ -1,14 +1,9 @@
 
-advanced-open-file@0.16.6
 atom-fuzzy-grep@0.16.0
-atom-ungit@0.5.3
 busy-signal@1.4.1
 column-select@0.2.0
 editorconfig@2.2.2
-emacs-flow@0.1.2
 git-control@0.9.0
-git-plus@7.8.0
-gpd@0.15.4
 highlight-selected@0.13.1
 intentions@1.1.2
 language-docker@1.1.7
@@ -20,7 +15,6 @@ linter-js-yaml@1.2.7
 linter-ui-default@1.5.0
 linter@2.1.4
 markdown-folding@0.1.0
-markdown-writer@2.6.5
 minimap-bookmarks@0.4.2
 minimap-cursorline@0.2.0
 minimap-highlight-selected@4.6.1

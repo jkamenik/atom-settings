@@ -12,12 +12,6 @@
       ]
     disabledPackages: [
       "whitespace"
-      "atom-ungit"
-      "git-plus"
-      "gpd"
-      "markdown-writer"
-      "emacs-flow"
-      "advanced-open-file"
     ]
     packagesWithKeymapsDisabled: [
       "glist"
