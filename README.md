@@ -30,6 +30,3 @@ Faster and nicer then grep.
 
 `brew install ag`
 
-### Ungit
-
-[Ungit](https://github.com/FredrikNoren/ungit) is Git GUI written in node.  It will show up directly in atom if it is installed and you have the `atom-ungit` plugin.
