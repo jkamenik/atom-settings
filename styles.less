@@ -34,27 +34,27 @@ atom-text-editor::shadow .cursor {
 // Note: this causes a deprecation warning, but until GFM/Atom is updated this
 // is the only way to effect the color of Header elements.
 //atom-text-editor::shadow span.gfm .raw => atom-text-editor.editor span.syntax--gfm .syntax--raw
-atom-text-editor::shadow {
+atom-text-editor.editor{
   // Make the Markdown colors a little bit more pleasant.
   span.syntax--gfm {
     .syntax--raw {
       color: #FFFFB6;
     }
     
-    .heading {
+    .syntax--heading {
       font-weight: bold;
 
-      .marker {
+      .syntax--marker {
         color: inherit;
       }
     }
 
-    .heading-1 {color: rgb(215,176,145);}
-    .heading-2 {color: rgb(192,235,192);}
-    .heading-3 {color: rgb(119,183,186);}
-    .heading-4 {color: rgb(202,158,94);}
-    .heading-5 {color: rgb(149,223,219);}
-    .heading-6 {color: rgb(153,197,160);}
+    .syntax--heading-1 {color: rgb(215,176,145);}
+    .syntax--heading-2 {color: rgb(192,235,192);}
+    .syntax--heading-3 {color: rgb(119,183,186);}
+    .syntax--heading-4 {color: rgb(202,158,94);}
+    .syntax--heading-5 {color: rgb(149,223,219);}
+    .syntax--heading-6 {color: rgb(153,197,160);}
   }
 
   // Hide the unimportant mark that is added by diff to make colors easier to see.
