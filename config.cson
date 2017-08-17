@@ -46,6 +46,8 @@
   gpd:
     dateFormat: "YYYY-MM-DD hh:mm"
     defaultGpdFile: "/Users/jkamenik/Dropbox/gtd/main.GPD"
+  "linter-ui-default":
+    panelHeight: 81
   "markdown-preview":
     grammars: [
       "source.gfm"
