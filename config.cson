@@ -6,6 +6,7 @@
   awiki:
     wikiLocation: "/Users/jkamenik/.atom/packages/awiki/wiki/"
   core:
+    closeDeletedFileTabs: true
     customFileTypes:
       "source.dockerfile": [
         "Dockerfile.prod"
