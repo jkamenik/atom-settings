@@ -29,6 +29,8 @@
     fontSize: 17
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "385e0edb-539c-991e-15e4-ea182c558aed"
   "fuzzy-finder":
@@ -48,7 +50,10 @@
     dateFormat: "YYYY-MM-DD hh:mm"
     defaultGpdFile: "/Users/jkamenik/Dropbox/gtd/main.GPD"
   "linter-ui-default":
-    panelHeight: 81
+    panelHeight: 70
+    showPanel: true
+  "markdown-pdf":
+    format: "Letter"
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -101,6 +106,10 @@
     showInvisibles: true
     softWrap: false
     softWrapAtPreferredLineLength: false
+".editorconfig.source":
+  editor:
+    softWrap: true
+    softWrapAtPreferredLineLength: true
 ".gfm.nvatom.source":
   editor:
     showInvisibles: false
