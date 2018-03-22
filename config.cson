@@ -1,5 +1,8 @@
 "*":
   Termrk: {}
+  "atom-ide-ui":
+    use:
+      "atom-ide-diagnostics-ui": "never"
   "atom-package-deps":
     ignored: []
   atomdo: {}
@@ -26,7 +29,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontSize: 17
+    fontSize: 16
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -50,8 +53,7 @@
     dateFormat: "YYYY-MM-DD hh:mm"
     defaultGpdFile: "/Users/jkamenik/Dropbox/gtd/main.GPD"
   "linter-ui-default":
-    panelHeight: 70
-    showPanel: true
+    panelHeight: 259
   "markdown-pdf":
     format: "Letter"
   "markdown-preview":
@@ -64,6 +66,7 @@
       "text.plain.null-grammar"
       "source.gfm.nvatom"
     ]
+    useGitHubStyle: true
   minimap:
     disablePythonDocLinks: true
     plugins:
@@ -79,6 +82,7 @@
     directory: "/Users/jkamenik/Dropbox/notes"
   organized: {}
   "spell-check":
+    addKnownWords: true
     grammars: [
       "source.asciidoc"
       "source.gfm"
@@ -88,6 +92,20 @@
       "source.gfm.nvatom"
       "source.gpd"
       "source.gpd_note"
+      "source.yaml"
+      "source.js"
+    ]
+    knownWords: [
+      "aws"
+      "loadbalancer"
+      "pv"
+      "postgres"
+      "elasticsearch"
+      "tls"
+      "pushgateway"
+      "greyspark"
+      "postgresql"
+      "kibana"
     ]
   term3: {}
   "theme-switcher":
@@ -108,6 +126,7 @@
     softWrapAtPreferredLineLength: false
 ".editorconfig.source":
   editor:
+    autoIndentOnPaste: true
     softWrap: true
     softWrapAtPreferredLineLength: true
 ".gfm.nvatom.source":
