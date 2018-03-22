@@ -3,6 +3,8 @@
   "atom-ide-ui":
     use:
       "atom-ide-diagnostics-ui": "never"
+  "atom-notes":
+    directory: "/Users/jkamenik/Dropbox/notes"
   "atom-package-deps":
     ignored: []
   atomdo: {}

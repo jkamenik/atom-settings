@@ -1,9 +1,11 @@
 
 atom-fuzzy-grep@0.17.2
 atom-ide-ui@0.9.4
+atom-notes@1.16.3
 busy-signal@1.4.3
 column-select@1.0.1
 editorconfig@2.2.2
+file-icons@2.1.18
 git-log@0.4.1
 git-plus@7.10.2
 go-debug@1.6.0
@@ -13,6 +15,7 @@ graphviz-preview-plus@1.5.3
 highlight-selected@0.13.1
 hyperclick@0.1.5
 intentions@1.1.5
+language-atom-notes@0.2.3
 language-docker@1.1.8
 language-dot@1.7.0
 language-dotfiles@1.1.0
@@ -30,8 +33,8 @@ minimap-cursorline@0.2.0
 minimap-highlight-selected@4.6.1
 minimap-linter@2.1.3
 minimap@4.29.8
-nvatom@0.11.0
 pretty-json@2.0.0
+release-notes@0.53.0
 sort-lines@0.18.0
 tablr@1.8.3
 tabularize@0.2.5
