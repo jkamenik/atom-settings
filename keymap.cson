@@ -56,3 +56,27 @@
 
 'atom-text-editor[data-grammar="source gfm nvatom"]:not([mini])':
   'tab': 'markdown-folding:cycle'
+
+'.terminal-pane':
+  'cmd-k alt-cmd-w': 'unset!'
+  'cmd-k cmd-b': 'unset!'
+  'cmd-k cmd-down': 'unset!'
+  'cmd-k cmd-left': 'unset!'
+  'cmd-k cmd-n': 'unset!'
+  'cmd-k cmd-p': 'unset!'
+  'cmd-k cmd-right': 'unset!'
+  'cmd-k cmd-up': 'unset!'
+  'cmd-k cmd-w': 'unset!'
+  'cmd-k down': 'unset!'
+  'cmd-k left': 'unset!'
+  'cmd-k right': 'unset!'
+  'cmd-k up': 'unset!'
+  'cmd-k cmd-g': 'unset!'
+  'cmd-k': 'atom-ide-terminal:clear'
+  'alt-cmd': 'unset!'
+  # 'alt-cmd-left': 'unset!'
+  # 'alt-cmd-right': 'unset!'
+# 
+# '.terminal-pane .editor:not(.mini)':
+  'alt-cmd-left': 'pane:show-previous-item'
+  'alt-cmd-right': 'pane:show-next-item'

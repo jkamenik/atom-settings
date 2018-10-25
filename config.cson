@@ -1,6 +1,25 @@
 "*":
   Termrk: {}
   "atom-ide-ui":
+    "atom-ide-terminal":
+      preservedCommands: [
+        "command-palette:toggle"
+        "fb-interactive-smartlog:toggle"
+        "nuclide-quick-open:find-anything"
+        "atom-ide-terminal:add-escape-prefix"
+        "atom-ide-terminal:new-terminal"
+        "atom-ide-terminal:toggle-terminal-focus"
+        "pane:move-active-item-to-top-of-stack"
+        "pane:show-next-recently-used-item"
+        "window:focus-next-pane"
+        "window:focus-previous-pane"
+        "window:focus-pane-above"
+        "window:focus-pane-below"
+        "window:focus-pane-on-left"
+        "window:focus-pane-on-right"
+        "pane:show-previous-item"
+        "pane:show-next-item"
+      ]
     use:
       "atom-ide-diagnostics-ui": "never"
   "atom-notes":
@@ -44,18 +63,24 @@
   "git-plus":
     diffs:
       includeStagedDiff: false
-    experimental: {}
+    experimental:
+      autoFetch: 30
+      autoFetchNotify: true
     general:
       _analyticsUserId: "b6030370-75d1-4086-b623-465f9e774632"
     remoteInteractions:
       pullBeforePush: true
   glist:
     githubToken: "**********"
+  "go-plus":
+    autocomplete: {}
+    config: {}
   gpd:
     dateFormat: "YYYY-MM-DD hh:mm"
     defaultGpdFile: "/Users/jkamenik/Dropbox/gtd/main.GPD"
+  "graphviz-preview-plus": {}
   "linter-ui-default":
-    panelHeight: 259
+    panelHeight: 257
   "markdown-pdf":
     format: "Letter"
   "markdown-preview":
@@ -67,6 +92,7 @@
       "text.plain"
       "text.plain.null-grammar"
       "source.gfm.nvatom"
+      "source.gfm.notes"
     ]
     useGitHubStyle: true
   minimap:
@@ -88,14 +114,16 @@
     grammars: [
       "source.asciidoc"
       "source.gfm"
+      "text.html.basic"
       "text.git-commit"
       "text.plain"
       "text.plain.null-grammar"
-      "source.gfm.nvatom"
+      "textsource.gfm.nvatom"
       "source.gpd"
       "source.gpd_note"
       "source.yaml"
       "source.js"
+      "source.gfm.notes"
     ]
     knownWords: [
       "aws"
@@ -108,6 +136,13 @@
       "greyspark"
       "postgresql"
       "kibana"
+      "Kubernetes"
+      "Greyspark's"
+      "Grafana"
+      "syslog-ng"
+      "Sensu"
+      "Heroku"
+      "Tddium"
     ]
   term3: {}
   "theme-switcher":
@@ -147,4 +182,7 @@
   editor:
     showIndentGuide: true
     showInvisibles: true
+    softWrap: false
+".plain.text":
+  editor:
     softWrap: false

@@ -61,6 +61,11 @@
     'prefix': 'wait'
     'body': " @(waiting) !(${0:whom})"
 
+'.source.groovy':
+  'custom-field':
+    'prefix': 'cust'
+    'body': 'replica.customFields."${1:Field Name}" = issue.customFields."${1:Field Name}"'
+
 # '.source.GPD_Note':
 #   'cost':
 #     'prefix': '$'
