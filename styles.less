@@ -36,11 +36,12 @@ atom-text-editor::shadow .cursor {
 //atom-text-editor::shadow span.gfm .raw => atom-text-editor.editor span.syntax--gfm .syntax--raw
 atom-text-editor.editor{
   // Make the Markdown colors a little bit more pleasant.
-  span.syntax--gfm {
+  // span.syntax--gfm {
+  span.syntax--md, span.syntax--gfm {
     .syntax--raw {
       color: #FFFFB6;
     }
-    
+
     .syntax--heading {
       font-weight: bold;
 
@@ -48,6 +49,9 @@ atom-text-editor.editor{
         color: inherit;
       }
     }
+
+    .syntax--italic {font-style: italic;}
+    .syntax--bold {font-weight: bold;}
 
     .syntax--heading-1 {color: rgb(215,176,145);}
     .syntax--heading-2 {color: rgb(192,235,192);}
@@ -64,7 +68,7 @@ atom-text-editor.editor{
       font-size: 0;
     }
   }
-  
+
   span.syntax--manifest {
     .syntax--heading {
       font-weight: bold;
