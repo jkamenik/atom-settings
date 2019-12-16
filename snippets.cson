@@ -20,6 +20,82 @@
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
 
+'.text.md':
+  'New DSO Status Entry':
+    'prefix': 'status'
+    'description': 'Adding a DSO Status entry'
+    'body': """## ${1:<date>}
+
+-   John
+    -   ${2:status}
+-   Braden
+-   Chris
+-   Danil
+-   Viktor
+-   Matt
+-   Mike
+-   Camp
+-   Casey
+"""
+
+  'Food Entry':
+    'prefix': 'food'
+    'description': 'Add a new day\'s food entry'
+    'body': """## ${1:<date>}
+
+<summary of day>
+
+---
+
+-   Teas:       ${5:<count>}
+-   Mental:     ${2:<mood>}
+-   Physical:   ${3:<feeling>}
+-   Small Goal: ${4:<what one thing?>}
+-   Exercize:   ${5:<exercize, time>}
+
+---
+
+Breakfast
+
+-   Meds (HBP + Claritin)
+-   Monster, 1 can (ultra white)
+
+Lunch
+
+-   ???
+
+Dinner
+
+-   ???
+
+Snack
+
+-   ???
+"""
+
+  'CRPI':
+    'prefix': "crpi"
+    'description': 'Add new line'
+    'body': """CRPI-${1:xxxx}: ${2:summary}
+   -   ${3:note}
+"""
+  'DSO':
+    'prefix': 'dso'
+    'description': 'Add new DSO task'
+    'body': """DSO-${1:xxx}: ${2:summary}
+   -   ${3:note}
+"""
+
+  'Task':
+    'prefix': 'todo'
+    'description': 'Add todo to an existing list'
+    'body': '[ ] ${1:todo}'
+
+  'Task list':
+    'prefix': 'ttodo'
+    'description': 'Create a new list todo item'
+    'body': '-   [ ] ${1:todo}'
+
 '.source.gpd':
   'boilerplate':
     'prefix':'///'
