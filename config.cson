@@ -1,6 +1,9 @@
 "*":
   Termrk: {}
+  "atom-fuzzy-grep": {}
   "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
     "atom-ide-terminal":
       preservedCommands: [
         "command-palette:toggle"
@@ -24,6 +27,15 @@
       "atom-ide-diagnostics-ui": "never"
   "atom-notes":
     directory: "/Users/jkamenik/Dropbox/notes"
+    extensions: [
+      ".md"
+      ".markdown"
+      ".adoc"
+      ".txt"
+      ".dot"
+      ".csv"
+    ]
+    orderByFuzzyFileNameMatch: true
   "atom-package-deps":
     ignored: []
   atomdo: {}
@@ -35,7 +47,12 @@
       "source.dockerfile": [
         "Dockerfile.prod"
       ]
+    debugLSP: true
     disabledPackages: [
+      "language-gfm"
+      "graphviz-preview-plus"
+      "atom-keyboard-macros"
+      "git-plus"
       "whitespace"
     ]
     packagesWithKeymapsDisabled: [
@@ -50,21 +67,25 @@
     ]
     titleBar: "custom"
   editor:
-    fontSize: 16
+    fontSize: 13
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "385e0edb-539c-991e-15e4-ea182c558aed"
+  "file-types":
+    "*.lsrules": "source.json"
+    "image.lock": "source.yaml"
   "fuzzy-finder":
+    scoringSystem: "fast"
     searchAllPanes: true
+    useRipGrep: true
   "git-diff": {}
   "git-plus":
     diffs:
       includeStagedDiff: false
     experimental:
-      autoFetch: 30
       autoFetchNotify: true
     general:
       _analyticsUserId: "b6030370-75d1-4086-b623-465f9e774632"
@@ -79,21 +100,21 @@
     dateFormat: "YYYY-MM-DD hh:mm"
     defaultGpdFile: "/Users/jkamenik/Dropbox/gtd/main.GPD"
   "graphviz-preview-plus": {}
+  "linter-markdown":
+    scopes: [
+      "source.gfm"
+      "source.pfm"
+      "text.md"
+      "source.gfm.notes"
+    ]
   "linter-ui-default":
-    panelHeight: 257
+    panelHeight: 259
+    showPanel: true
+  "markdown-mindmap":
+    theme: "colorful"
   "markdown-pdf":
     format: "Letter"
   "markdown-preview":
-    grammars: [
-      "source.gfm"
-      "source.litcoffee"
-      "text.html.basic"
-      "text.md"
-      "text.plain"
-      "text.plain.null-grammar"
-      "source.gfm.nvatom"
-      "source.gfm.notes"
-    ]
     useGitHubStyle: true
   minimap:
     disablePythonDocLinks: true
@@ -124,6 +145,7 @@
       "source.yaml"
       "source.js"
       "source.gfm.notes"
+      "text.md"
     ]
     knownWords: [
       "aws"
@@ -153,6 +175,8 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
+  zentabs:
+    neverCloseUnsaved: true
 ".diff.source":
   editor:
     autoIndent: true
