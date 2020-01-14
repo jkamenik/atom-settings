@@ -26,12 +26,13 @@
     'description': 'Adding a DSO Status entry'
     'body': """## ${1:<date>}
 
--   John
-    -   ${2:status}
 -   Braden
 -   Chris
 -   Danil
 -   Viktor
+-   John
+    -   ${2:status}
+
 -   Matt
 -   Mike
 -   Camp
@@ -50,8 +51,7 @@
 -   Teas:       ${5:<count>}
 -   Mental:     ${2:<mood>}
 -   Physical:   ${3:<feeling>}
--   Small Goal: ${4:<what one thing?>}
--   Exercize:   ${5:<exercize, time>}
+-   Exercise:   ${5:<exercise, time>}
 
 ---
 
@@ -77,13 +77,11 @@ Snack
     'prefix': "crpi"
     'description': 'Add new line'
     'body': """CRPI-${1:xxxx}: ${2:summary}
-   -   ${3:note}
 """
   'DSO':
     'prefix': 'dso'
     'description': 'Add new DSO task'
     'body': """DSO-${1:xxx}: ${2:summary}
-   -   ${3:note}
 """
 
   'Task':
