@@ -1,6 +1,9 @@
 "*":
   Termrk: {}
-  "atom-fuzzy-grep": {}
+  "atom-folding":
+    foldTrailingWhitespace: true
+  "atom-fuzzy-grep":
+    showFullPath: true
   "atom-ide-ui":
     "atom-ide-code-format":
       formatOnSave: true
@@ -50,10 +53,10 @@
     debugLSP: true
     disabledPackages: [
       "language-gfm"
-      "graphviz-preview-plus"
-      "atom-keyboard-macros"
       "git-plus"
       "whitespace"
+      "autoflow"
+      "emacs-tab"
     ]
     packagesWithKeymapsDisabled: [
       "glist"
@@ -67,7 +70,7 @@
     ]
     titleBar: "custom"
   editor:
-    fontSize: 13
+    fontSize: 18
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -91,6 +94,10 @@
       _analyticsUserId: "b6030370-75d1-4086-b623-465f9e774632"
     remoteInteractions:
       pullBeforePush: true
+  github:
+    remoteFetchProtocol: "ssh"
+    reportCannotLocateWorkspaceError: true
+    viewChangesForCurrentFileDiffPaneSplitDirection: "down"
   glist:
     githubToken: "**********"
   "go-plus":
@@ -165,6 +172,7 @@
       "Sensu"
       "Heroku"
       "Tddium"
+      "versions"
     ]
   term3: {}
   "theme-switcher":
@@ -175,8 +183,31 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
+  "wrap-guide":
+    columns: [
+      80
+      120
+    ]
   zentabs:
     neverCloseUnsaved: true
+".coffee.source":
+  editor:
+    preferredLineLength: 120
+  "wrap-guide":
+    columns: [
+      80
+      120
+    ]
+".concourse-pipeline-yaml.source":
+  editor:
+    preferredLineLength: 500
+  "wrap-guide":
+    columns: [
+      80
+      120
+      300
+      500
+    ]
 ".diff.source":
   editor:
     autoIndent: true
@@ -188,8 +219,14 @@
 ".editorconfig.source":
   editor:
     autoIndentOnPaste: true
+    preferredLineLength: 120
     softWrap: true
     softWrapAtPreferredLineLength: true
+  "wrap-guide":
+    columns: [
+      80
+      120
+    ]
 ".gfm.nvatom.source":
   editor:
     showInvisibles: false
@@ -207,6 +244,27 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: false
-".plain.text":
+".hcl.source":
   editor:
     softWrap: false
+".md.text":
+  editor:
+    preferredLineLength: 120
+    softWrap: false
+  "wrap-guide":
+    columns: [
+      80
+      120
+    ]
+".plain.text":
+  editor:
+    softWrap: true
+".source.yaml":
+  editor:
+    preferredLineLength: 120
+    softWrap: false
+  "wrap-guide":
+    columns: [
+      80
+      120
+    ]
