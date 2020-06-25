@@ -63,26 +63,33 @@
 '.platform-darwin terminal-view':
   'cmd-k': 'iv-terminal:clear'
 
-'.terminal-pane':
-  'cmd-k alt-cmd-w': 'unset!'
-  'cmd-k cmd-b': 'unset!'
-  'cmd-k cmd-down': 'unset!'
-  'cmd-k cmd-left': 'unset!'
-  'cmd-k cmd-n': 'unset!'
-  'cmd-k cmd-p': 'unset!'
-  'cmd-k cmd-right': 'unset!'
-  'cmd-k cmd-up': 'unset!'
-  'cmd-k cmd-w': 'unset!'
-  'cmd-k down': 'unset!'
-  'cmd-k left': 'unset!'
-  'cmd-k right': 'unset!'
-  'cmd-k up': 'unset!'
-  'cmd-k cmd-g': 'unset!'
-  'cmd-k': 'atom-ide-terminal:clear'
-  'alt-cmd': 'unset!'
-  # 'alt-cmd-left': 'unset!'
-  # 'alt-cmd-right': 'unset!'
-# 
-# '.terminal-pane .editor:not(.mini)':
-  'alt-cmd-left': 'pane:show-previous-item'
-  'alt-cmd-right': 'pane:show-next-item'
+'.platform-darwin atom-csv-editor':
+  'alt-cmd-up': 'tablr:insert-row-before'
+  'alt-cmd-down': 'tablr:insert-row-after'
+  'alt-shift-cmd-left': 'tablr:insert-column-before'
+  'alt-shift-cmd-right': 'tablr:insert-column-after'
+  
+
+# '.terminal-pane':
+#   'cmd-k alt-cmd-w': 'unset!'
+#   'cmd-k cmd-b': 'unset!'
+#   'cmd-k cmd-down': 'unset!'
+#   'cmd-k cmd-left': 'unset!'
+#   'cmd-k cmd-n': 'unset!'
+#   'cmd-k cmd-p': 'unset!'
+#   'cmd-k cmd-right': 'unset!'
+#   'cmd-k cmd-up': 'unset!'
+#   'cmd-k cmd-w': 'unset!'
+#   'cmd-k down': 'unset!'
+#   'cmd-k left': 'unset!'
+#   'cmd-k right': 'unset!'
+#   'cmd-k up': 'unset!'
+#   'cmd-k cmd-g': 'unset!'
+#   'cmd-k': 'atom-ide-terminal:clear'
+#   'alt-cmd': 'unset!'
+#   # 'alt-cmd-left': 'unset!'
+#   # 'alt-cmd-right': 'unset!'
+# # 
+# # '.terminal-pane .editor:not(.mini)':
+#   'alt-cmd-left': 'pane:show-previous-item'
+#   'alt-cmd-right': 'pane:show-next-item'
