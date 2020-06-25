@@ -77,6 +77,7 @@
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "385e0edb-539c-991e-15e4-ea182c558aed"
+  "file-icons": {}
   "file-types":
     "*.lsrules": "source.json"
     "image.lock": "source.yaml"
@@ -115,7 +116,7 @@
       "source.gfm.notes"
     ]
   "linter-ui-default":
-    panelHeight: 259
+    panelHeight: 217
     showPanel: true
   "markdown-mindmap":
     theme: "colorful"
@@ -174,6 +175,9 @@
       "Tddium"
       "versions"
     ]
+  tablr:
+    csvEditor:
+      header: true
   term3: {}
   "theme-switcher":
     syntaxThemeOne: "atom-dark-syntax"
