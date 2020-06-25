@@ -56,6 +56,12 @@
 
 'atom-text-editor[data-grammar="source gfm nvatom"]:not([mini])':
   'tab': 'markdown-folding:cycle'
+  
+'atom-text-editor[data-grammar="text md"]:not([mini])':
+  'alt-cmd-up': 'markdown-table-editor:insert-row'
+  
+'.platform-darwin terminal-view':
+  'cmd-k': 'iv-terminal:clear'
 
 '.terminal-pane':
   'cmd-k alt-cmd-w': 'unset!'
